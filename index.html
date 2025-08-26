@@ -1,0 +1,140 @@
+<div class="container profile">
+
+  <div class="profile-info">
+    <div class="inner">
+      <div class="pfp-container">
+        <div class="pfp">
+          <img src="https://pbs.twimg.com/profile_images/1946703408104148992/Bqg4ch8H_400x400.jpg" alt="pfp">
+        </div>
+        <div class="username">
+          <h2>Radiogotmehead</h2>
+        </div>
+      </div>
+      <h1 style="font-family: 'Almendra Display', serif; font-size: 22px;">
+        Why are you wearing that stupid bunny suit?
+      </h1>
+      <p style="font-family: 'Almendra Display', serif; font-size: 20px;">
+        Why are you wearing that stupid man suit?
+      </p>
+    </div>
+  </div>
+
+  <div class="profile-links">
+    <div class="inner">
+      <h2 style="font-family: 'Almendra Display', serif;">Socials</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/radiogotmehead/" target="_blank">My Instagram</a></li>
+        <li><a href="https://x.com/radiogotmehead" target="_blank">My Twitter/X</a></li>
+        <li><a href="https://github.com/malikethbbz" target="_blank">My GitHub</a></li>
+        <li><a href="https://www.youtube.com/@chrissymolti" target="_blank">My YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- Include Almendra Display font -->
+<link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background: black url('https://sadhost.neocities.org/images/tiles/black.jpg') repeat;
+  color: #f0f0f0;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  top:0;left:0;right:0;bottom:0;
+  background: url('https://i.pinimg.com/originals/6d/c7/1b/6dc71bb2799eeeac65eaea9dbc4acede.gif') center/cover no-repeat;
+  opacity:0.2;
+  z-index:-1;
+  animation: gothicPulse 10s infinite alternate;
+}
+@keyframes gothicPulse {
+  from {opacity:0.2;}
+  to {opacity:0.4;}
+}
+
+html:before {
+  content:"";
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size:3px 3px;
+  z-index:100;
+  pointer-events:none;
+  animation: grainShift 8s steps(10) infinite;
+}
+@keyframes grainShift {
+  0%,100% {transform:translate(0,0)}
+  20% {transform:translate(-10px,5px)}
+  40% {transform:translate(5px,-15px)}
+  60% {transform:translate(15px,10px)}
+  80% {transform:translate(-5px,20px)}
+}
+
+/* Profile container */
+.container.profile {
+  max-width:600px;
+  margin:auto;
+  border-left:2px solid grey;
+  border-right:2px solid grey;
+}
+
+/* Inner boxes */
+.inner {
+  padding:15px;
+  background:black;
+  border:2px solid grey;
+  margin-bottom:15px;
+}
+
+/* PFP + username container */
+.pfp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.pfp img {
+  width:90px;
+  height:90px;
+  border:2px solid grey;
+  display:block;
+  margin-right: 15px;
+}
+.username h2 {
+  font-family: 'Almendra Display', serif;
+  color: #f0f0f0;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Headings */
+h1,h2 {
+  margin:0 0 10px 0;
+  color:#f0f0f0;
+  font-family: 'Almendra Display', serif;
+}
+
+/* Links */
+.profile-links ul {
+  list-style:none;
+  padding:0;
+}
+.profile-links li {
+  margin:8px 0;
+}
+.profile-links a {
+  color:#cceeff;
+  text-decoration:underline;
+  font-weight:bold;
+  cursor:pointer;
+}
+.profile-links a:hover {
+  color:#ff3333;
+}
+</style>
