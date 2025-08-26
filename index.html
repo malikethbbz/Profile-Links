@@ -1,42 +1,11 @@
-<div class="container profile">
-
-  <div class="profile-info">
-    <div class="inner">
-      <div class="pfp-container">
-        <div class="pfp">
-          <img src="https://pbs.twimg.com/profile_images/1946703408104148992/Bqg4ch8H_400x400.jpg" alt="pfp">
-        </div>
-        <div class="username">
-          <h2>Radiogotmehead</h2>
-        </div>
-      </div>
-      <h1 style="font-family: 'Almendra Display', serif; font-size: 22px;">
-        Why are you wearing that stupid bunny suit?
-      </h1>
-      <p style="font-family: 'Almendra Display', serif; font-size: 20px;">
-        Why are you wearing that stupid man suit?
-      </p>
-    </div>
-  </div>
-
-  <div class="profile-links">
-    <div class="inner">
-      <h2 style="font-family: 'Almendra Display', serif;">Socials</h2>
-      <ul>
-        <li><a href="https://www.instagram.com/radiogotmehead/" target="_blank">Instagram</a></li>
-        <li><a href="https://x.com/radiogotmehead" target="_blank">Twitter</a></li>
-        <li><a href="https://www.youtube.com/@chrissymolti" target="_blank">YouTube</a></li>
-        <li><a href="https://letterboxd.com/MKicklist/" target="_blank">Letterboxd</a></li>
-        <li><a href="https://github.com/malikethbbz" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiogotmehead Profile</title>
 <!-- Include Almendra Display font -->
 <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
-
 <style>
 body {
   background: black url('https://sadhost.neocities.org/images/tiles/black.jpg') repeat;
@@ -80,10 +49,11 @@ html:before {
 
 /* Profile container */
 .container.profile {
-  max-width:600px;
-  margin:auto;
-  border-left:2px solid grey;
-  border-right:2px solid grey;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
 }
 
 /* Inner boxes */
@@ -98,27 +68,36 @@ html:before {
 .pfp-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
   margin-bottom: 10px;
 }
 .pfp img {
-  width:90px;
-  height:90px;
-  border:2px solid grey;
-  display:block;
+  width: 100%;
+  max-width: 90px;
+  height: auto;
+  border: 2px solid grey;
+  display: block;
   margin-right: 15px;
 }
 .username h2 {
   font-family: 'Almendra Display', serif;
   color: #f0f0f0;
-  font-size: 22px;
+  font-size: 1.3rem;
   margin: 0;
 }
 
 /* Headings */
-h1,h2 {
-  margin:0 0 10px 0;
-  color:#f0f0f0;
+h1 {
   font-family: 'Almendra Display', serif;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #f0f0f0;
+}
+h2.section-title {
+  font-family: 'Almendra Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
 }
 
 /* Links */
@@ -138,4 +117,65 @@ h1,h2 {
 .profile-links a:hover {
   color:#ff3333;
 }
+
+/* Paragraphs */
+p {
+  font-family: 'Almendra Display', serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .username h2 {
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
 </style>
+</head>
+<body>
+
+<div class="container profile">
+
+  <div class="profile-info">
+    <div class="inner">
+      <div class="pfp-container">
+        <div class="pfp">
+          <img src="https://pbs.twimg.com/profile_images/1946703408104148992/Bqg4ch8H_400x400.jpg" alt="pfp">
+        </div>
+        <div class="username">
+          <h2>Radiogotmehead</h2>
+        </div>
+      </div>
+      <h1>
+        Why are you wearing that stupid bunny suit?
+      </h1>
+      <p>
+        Why are you wearing that stupid man suit?
+      </p>
+    </div>
+  </div>
+
+  <div class="profile-links">
+    <div class="inner">
+      <h2 class="section-title">Socials</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/radiogotmehead/" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com/radiogotmehead" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/@chrissymolti" target="_blank">YouTube</a></li>
+        <li><a href="https://letterboxd.com/MKicklist/" target="_blank">Letterboxd</a></li>
+        <li><a href="https://github.com/malikethbbz" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
